@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.auth-status {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-status button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-status button:hover {
+    background-color: #c82333;
+}
+
+#video-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#video-list.loading::before {
+    content: "Đang tải danh sách video...";
+    display: block;
+    text-align: center;
+    color: #555;
+    padding: 20px;
+}
+
+#video-list.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.video-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.video-item:hover {
+    background-color: #e0e0e0;
+}
+
+.video-item .thumbnail {
+    width: 120px;
+    height: 68px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.video-item span {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#video-player {
+    display: none;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .video-item {
+        padding: 8px;
+        margin: 5px 0;
+    }
+
+    .video-item .thumbnail {
+        width: 80px;
+        height: 45px;
+    }
+
+    .auth-status button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}

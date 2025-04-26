@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Stream Phim</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async></script>
+</head>
+<body>
+    <h1>Web Stream Phim</h1>
+    <div class="auth-status">
+        <span id="auth-message">Vui lòng đăng nhập để xem video</span>
+        <button id="sign-out" style="display: none;" onclick="signOut()">Đăng xuất</button>
+    </div>
+    <div id="video-list" class="loading">Đang tải danh sách video...</div>
+    <div id="video-player">
+        <video id="player" controls>
+            <source id="video-source" src="" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ phát video.
+        </video>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
