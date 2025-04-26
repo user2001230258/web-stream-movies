@@ -1,8 +1,6 @@
 // Thay thế bằng API Key và Client ID của bạn
-// const API_KEY = 'AIzaSyB1Akwxrg_9cgUelSaVHSWmqijhuYM7RQA'; // Ví dụ: 'AIzaSyB1Akwxrg_9cgUelSaVHSWmqijhuYM7RQA'
-// const CLIENT_ID = '298431284956-r4lu6htf8oevjqjka6bralinr1e5k69v.apps.googleusercontent.com'; // Ví dụ: '298431284956-r4lu6htf8oevjqjka6bralinr1e5k69v.apps.googleusercontent.com'
-const API_KEY = process.env.API_KEY;
-const CLIENT_ID = process.env.CLIENT_ID;
+const API_KEY = 'AIzaSyB1Akwxrg_9cgUelSaVHSWmqijhuYM7RQA'; // Ví dụ: 'AIzaSyB1Akwxrg_9cgUelSaVHSWmqijhuYM7RQA'
+const CLIENT_ID = '298431284956-r4lu6htf8oevjqjka6bralinr1e5k69v.apps.googleusercontent.com'; // Ví dụ: '298431284956-r4lu6htf8oevjqjka6bralinr1e5k69v.apps.googleusercontent.com'
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"];
 const SCOPES = 'https://www.googleapis.com/auth/drive.readonly';
 const FOLDER_ID = '1bf_-Jxekp_Dslh1SxSAskXdk5OhMcdcx'; // ID của thư mục chứa phim
